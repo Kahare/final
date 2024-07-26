@@ -1,0 +1,31 @@
+<c-row>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <!-- <button cButton color="primary" class="me-md-2">Button</button> -->
+    <button cButton color="primary">Add Poll</button>
+  </div>
+  <c-col [sm]="6">
+<c-card class="mb-4">
+  <c-card-header>
+    Polls
+    
+  </c-card-header>
+  <c-card-body>
+    
+        <img cCardImg="top" src="../../../assets/images/angular.jpg">
+        <c-card-body>
+          <h5 cCardTitle>Do you support the ongoing Demos?</h5>
+          
+          <c-form-check>
+            <input cFormCheckInput type="radio" value="one" name="flexRadioDefault" />
+            <label cFormCheckLabel>No</label>
+          </c-form-check>
+          <c-form-check>
+            <input cFormCheckInput type="radio" value="two" name="flexRadioDefault" checked/>
+            <label cFormCheckLabel>Yes</label>
+          </c-form-check>
+        </c-card-body>
+      
+  </c-card-body>
+</c-card>
+</c-col>
+</c-row>

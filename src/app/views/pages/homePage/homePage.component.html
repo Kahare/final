@@ -1,0 +1,48 @@
+<c-navbar colorScheme="light" expand="lg" style="background-color: #4854C3; color: white;">
+  <c-container fluid>
+    <h1 cNavbarBrand>
+      Citizen Connect 360
+    </h1>
+    <button [cNavbarToggler]="collapseRef"></button>
+    <div #collapseRef="cCollapse" navbar cCollapse>
+      <c-navbar-nav class="ms-auto">
+        <c-nav-item>
+          <a cNavLink href="/#/login">
+            <button cButton class="px-4" style="background-color: #1F1E70; color: white;">
+                      Login
+            </button>
+          </a>
+        </c-nav-item>
+        <c-nav-item>
+          <a cNavLink href="/#/register">
+            <button cButton class="px-4" style="background-color: #1F1E70; color: white;">
+                      Sign Up
+            </button>
+          </a>
+        </c-nav-item>
+      </c-navbar-nav>
+    </div>
+  </c-container>
+</c-navbar>
+<div class="min-vh-100 d-flex flex-row align-items-center" style="background-color: #4854C3; color: white;">
+  <c-container>
+    <c-row class="justify-content-center">
+      <c-col md="6">
+        <div class="clearfix">
+          <!-- <h1 class="float-start display-3 me-4">200</h1> -->
+          <h4 class="pt-3">Explore.</h4>
+          <p class="float-start">
+            A project to educate citizens, participate in polls and view incidences happening in the country.
+          </p>
+        </div>
+        <c-input-group class="input-prepend">
+          <span cInputGroupText>
+            <svg cIcon name="cilMagnifyingGlass"></svg>
+          </span>
+          <input cFormControl placeholder="What are you looking for?" type="text" />
+          <button cButton color="info">Search</button>
+        </c-input-group>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>

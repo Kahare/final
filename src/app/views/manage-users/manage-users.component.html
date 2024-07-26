@@ -1,0 +1,53 @@
+<c-row>
+  <h5>Approve Users</h5>
+  <c-col [sm]="6">
+<c-card class="mb-4">
+
+  <c-card-body>
+    <h5 cCardTitle>Username</h5>
+    
+    <c-form-check>
+      <input cFormCheckInput type="radio" value="one" name="flexRadioDefault" />
+      <label cFormCheckLabel>Govt. Official</label>
+    </c-form-check>
+    <c-form-check>
+      <input cFormCheckInput type="radio" value="two" name="flexRadioDefault" checked/>
+      <label cFormCheckLabel>Normal User</label>
+    </c-form-check>
+
+    <c-col [xs]="12">
+    <button cButton class="me-1" color="primary" type="submit">
+      Approve
+    </button>
+    <button cButton color="secondary" type="reset">
+      Deny
+    </button>
+  </c-col>
+  </c-card-body>
+      
+</c-card>
+</c-col>
+</c-row>
+
+
+<c-row>
+  <h5>Manage Users</h5>
+  <c-col [sm]="6">
+    <c-card class="mb-4">
+      <c-card-body>
+        <h5 cCardTitle>Username</h5>
+        <h5 cCardTitle>Role</h5>
+        <button cButton color="primary">Delete User</button>
+      </c-card-body>
+    </c-card>
+  </c-col>
+  <c-col [sm]="6">
+    <c-card class="mb-4">
+      <c-card-body>
+        <h5 cCardTitle>Username</h5>
+        <h5 cCardTitle>Role</h5>
+        <button cButton color="primary">Delete User</button>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
